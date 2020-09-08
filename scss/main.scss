@@ -27,6 +27,18 @@ section {
   margin: 7em 0;
 }
 
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+
+  &>* {
+    flex-basis: 30%;
+    min-width: 15em;
+  }
+}
+
 .spacing>*+* {
    margin-top: var(--spacer, 2rem);  
 }
@@ -61,6 +73,7 @@ section {
   font-size: clamp(3rem, calc(5vw + 1rem)), 4rem;
   line-height: 1;
   color: #17353d;
+  margin-bottom: 5rem;
 }
 
 .hero {
