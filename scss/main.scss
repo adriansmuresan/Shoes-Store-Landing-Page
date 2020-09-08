@@ -23,6 +23,10 @@ h1, h2, h3, p {
   max-width: 65em;
 }
 
+.spacing>*+* {
+   margin-top: var(--spacer, 2rem);  
+}
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -58,5 +62,8 @@ h1, h2, h3, p {
         url(../img/shoe-3.png), 
         radial-gradient(#444,#111);
       background-blend-mode: multiply;
-  }; 
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center center;
+  };
 }
