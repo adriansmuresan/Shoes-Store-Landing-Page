@@ -24,7 +24,7 @@ h1, h2, h3, p {
 }
 
 section {
-  margin: 7em 0;
+  padding: 7em 0;
 }
 
 .split {
@@ -90,4 +90,31 @@ section {
       background-repeat: no-repeat;
       background-position: center center;
   };
+}
+
+.featured {
+  background: #eee;
+
+  &__item {
+    display: block;
+    position: relative;
+    transform: scale(.85);
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      padding: 75% 75% 0 0;
+      border-radius: 50%;
+      background: #2193b0;
+      top: 10%;
+      left: 10%;
+      z-index: -1;
+    }
+  }
 }
