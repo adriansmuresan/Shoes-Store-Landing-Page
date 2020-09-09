@@ -142,3 +142,35 @@ section {
     }
   }
 }
+
+.product {
+  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+  padding: 3em;
+  border-radius: 3em;
+  margin-bottom: 1em;
+  text-align: center;
+
+  &__title {
+    font-size: 4rem;
+    line-height: 1.1;
+    color: #fff;
+    text-shadow: 0 0 .2em rgba($color: #000, $alpha: .2);
+  }
+}
+
+.shoe-red {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+.shoe-white {
+  --clr-inner: #fce4b3;
+  --clr-outer:  #eac886;
+  --clr-accent: #2f4858;
+}
+
+.shoe-grey {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
+}
