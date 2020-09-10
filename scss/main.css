@@ -185,6 +185,7 @@ section {
 @media (min-width: 45em) {
   .product {
     text-align: left;
+    margin-bottom: 9em;
   }
   .product__title {
     margin: 0;
@@ -195,6 +196,12 @@ section {
     shape-outside: url(../img/shoe-1.png);
     shape-margin: 1em;
     margin: 0 -2em 0 0;
+  }
+  .product.shoe-left .product__image {
+    float: left;
+    shape-outside: url(../img/shoe-2.png);
+    shape-margin: 2em;
+    margin: 0 0 0 -2em;
   }
 }
 
